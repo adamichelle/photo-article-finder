@@ -8,6 +8,14 @@ html {
   box-sizing: inherit;
 }
 
+a {
+  color: #FFFFFF;
+}
+
+a:hover {
+  color: #02b3e4;
+}
+
 body {
   background: #fafbfc;
   font-family: OpenSans, sans-serif;
