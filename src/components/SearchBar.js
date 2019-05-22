@@ -51,7 +51,7 @@ class SearchBar extends React.Component {
     fetchArticles(searchTerm) {
         this.setState({loading: true}, () => {
             this.props.addSpinner(this.state.loading);
-            fetch(`http://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchTerm}&api-key=${nyTimesAPIKey}`)
+            fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchTerm}&api-key=${nyTimesAPIKey}`)
             .then((response) => { 
                 if(response.ok) {
                     return response.json();
