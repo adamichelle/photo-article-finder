@@ -5,7 +5,7 @@ const Photo = (props) => {
         <div>
             <figure>
                 <img src={props.url} alt={props.caption}></img>
-                <figcaption>{props.caption} by {props.name}</figcaption>
+                <figcaption>{props.caption} by <a href={props.link}>{props.name}</a> on <a href="https://unsplash.com/">Unsplash</a></figcaption>
             </figure>
         </div>
     )

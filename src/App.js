@@ -32,7 +32,7 @@ class App extends Component {
   }
 
   addPhoto(photoInfo, searchTerm) {
-   const photo = <Photo url={photoInfo.urls.small} name={photoInfo.user.name} caption={searchTerm}/>
+   const photo = <Photo url={photoInfo.urls.small} name={photoInfo.user.name} link={photoInfo.user.links.html} caption={searchTerm}/>
    this.setState({
      photo: photo,
      loading: false
